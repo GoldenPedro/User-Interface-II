@@ -1,1 +1,260 @@
 /* Add CSS styling here */
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before {
+    box-sizing: inherit;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #242424;
+}
+
+header {
+    padding: 1%;
+}
+
+header h1 {
+    padding: 1%;
+    font-size: 4rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #0081ff;
+    margin: 1% 2%;
+}
+
+a:hover {
+    color: #004f9d;
+}
+
+.big-section {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.big-text {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0;
+    width: 30%;
+}
+
+.big-text h2 {
+    margin-top: 10%;
+    font-size: 3.5rem;
+}
+
+.big-text button {
+    width: 30%;
+    margin: 3% 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #0081ff;
+    color: white;
+    border: none;
+    padding: 1%;
+}
+
+.big-text button:hover {
+    background-color: #004f9d;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
+.profile-image img {
+    width: 60%;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.project-card {
+    width: 25%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card a {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card a img{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.project-card img {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.project-card p {
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+.placeholder-image {
+    width: 60%;
+}
+
+footer {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-section p {
+    font-size: 3rem;
+}
+
+.contact-section button {
+    margin: 20% 0;
+    width: 100%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: #0081ff;
+    color: white;
+    border: none;
+    padding: 1%;
+}
+
+.contact-section button:hover {
+    background-color: #004f9d;
+}
+
+.icons {
+    margin: 2%;
+    display: flex;
+}
+
+/* =========== Media Queries =============*/
+
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 0%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center ;
+        margin-top: 2%;
+    }
+
+    .placeholder-image {
+        width: 60%;
+    }
+
+    .big-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 80%;
+    }
+
+    .big-text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .project-card {
+        width: 45%;
+        margin: 2% 2%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 0%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    .placeholder-image {
+        width: 60%;
+    }
+
+    .big-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 80%;
+    }
+
+    .big-text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .project-card {
+        width: 45%;
+        margin: 2% 2%;
+    }
+}
+
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .project-card a img {
+        width: 80%;
+    }
+
+    .project-card img {
+        width: 80%;
+    }
+
+    .contact-section p {
+        font-size: 2.3rem;
+    }
+
+    .contact-section button {
+        font-size: 1rem;
+    }
+}
